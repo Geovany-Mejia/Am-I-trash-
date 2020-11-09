@@ -1,0 +1,36 @@
+﻿@model Quiz_22OCT.Models.User
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>DataPage</title>
+</head>
+<body>
+    <form asp-action="RsvpForm" method="post">
+        <div>
+            <label asp-for="Top_Laner">Your Top laner:</label>
+            <input asp-for="Top_Laner" />
+        </div>
+        <div>
+            <label asp-for="Jungler">Your Jungler:</label>
+            <input asp-for="Jungler" />
+        </div>
+        <div>
+            <label asp-for="Mid_Laner">Your Mid Laner:</label>
+            <input asp-for="Mid_Laner" />
+        </div>
+        <div>
+            <label asp-for="ADCorAPC">Your ADC or APC:</label>
+            <input asp-for="ADCorAPC" />
+        </div>
+        <div>
+            <label asp-for="Support">Your Support here:</label>
+            <input asp-for="Support" />
+        </div>
+        <button type="submit">Submit Data</button>
+    </form>
+</body>
+</html>
